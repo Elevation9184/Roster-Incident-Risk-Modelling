@@ -22,31 +22,31 @@ Traditional analysis might calculate incident co-occurrence probability as 0.5^n
 
 ## Installation
 To clone the repository
-git clone https://github.com/Elevation9184/Roster-Incident-Risk-Modelling.git
-cd Roster-Incident-Risk-Modelling
+```git clone https://github.com/Elevation9184/Roster-Incident-Risk-Modelling.git
+cd Roster-Incident-Risk-Modelling```
 
 ## Install dependencies
 pip install -r requirements.txt
 
 ## Requirements
-Python 3.7+
+```Python 3.7+
 NumPy
 Matplotlib
-Numba (for performance optimization)
+Numba (for performance optimization)```
 
 ## Configuration Options
 ### Staff tier ... adjust as required
-TIER_SPECS = {
+```TIER_SPECS = {
     'A': {'hrs_m': 36, 'hrs_sd': 3, 'count': 15},   # 3     shifts per week
     'B': {'hrs_m': 24, 'hrs_sd': 4, 'count': 10},   # 2     shifts per week
     'C': {'hrs_m': 18, 'hrs_sd': 3, 'count':  9},   # 1     shift  per week
     'D': {'hrs_m':  9, 'hrs_sd': 2, 'count':  3},   # 0.75  shifts per week
     'E': {'hrs_m': 48, 'hrs_sd': 2, 'count':  1},   # 4     shifts per week - potential exceptional performer
-}
+}```
 
 ### Shift coverage based on CEH/16 estimates:
-Day: rng.normal(8.78, 2.39) 
-Night: rng.normal(5.63, 0.81)
+```Day: rng.normal(8.78, 2.39) 
+Night: rng.normal(5.63, 0.81)```
 
 ### Configurable run parameters
 run(seed=2025, incident_count=50, n_runs=1000, n_swaps=20_000)
@@ -55,9 +55,9 @@ run(seed=2025, incident_count=50, n_runs=1000, n_swaps=20_000)
 MIT License - See LICENSE file for details
 
 ## Citation
-If using this code in academic or legal work, please cite:
+```If using this code in academic or legal work, please cite:
 Roster-Incident-Risk-Modelling: Monte Carlo Simulation of Healthcare Incident Exposure Patterns
-GitHub Repository: https://github.com/Elevation9184/Roster-Incident-Risk-Modelling
+GitHub Repository: https://github.com/Elevation9184/Roster-Incident-Risk-Modelling```
 
 ## Disclaimer
 This tool is intended for educational and analytical purposes. Results should be interpreted by qualified statisticians and domain experts. The model makes simplifying assumptions about healthcare operations and should be validated against specific institutional data before use in high-stakes decisions.
