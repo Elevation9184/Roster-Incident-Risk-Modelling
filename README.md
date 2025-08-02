@@ -22,12 +22,10 @@ Traditional analysis might calculate incident co-occurrence probability as 0.5^n
 
 ## Installation
 To clone the repository
+```
 git clone https://github.com/Elevation9184/Roster-Incident-Risk-Modelling.git
 cd Roster-Incident-Risk-Modelling
-
-## Install dependencies
-pip install -r requirements.txt
-
+```
 ## Requirements
 ```
 Python 3.7+
@@ -35,7 +33,12 @@ NumPy
 Matplotlib
 Numba (for performance optimization)
 ```
-## Configuration Options
+## Install dependencies
+```
+pip install -r requirements.txt
+```
+
+## Model Configuration Options
 ### Staff tier ... adjust as required
 ```
 TIER_SPECS = {
