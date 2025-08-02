@@ -22,17 +22,17 @@ Traditional analysis might calculate incident co-occurrence probability as 0.5^n
 
 ## Installation
 To clone the repository
-<pre><code>```git clone https://github.com/Elevation9184/Roster-Incident-Risk-Modelling.git
-cd Roster-Incident-Risk-Modelling```</code></pre>
+```git clone https://github.com/Elevation9184/Roster-Incident-Risk-Modelling.git
+cd Roster-Incident-Risk-Modelling```
 
 ## Install dependencies
 pip install -r requirements.txt
 
 ## Requirements
-<pre><code>```Python 3.7+
+```Python 3.7+
 NumPy
 Matplotlib
-Numba (for performance optimization)```</code></pre>
+Numba (for performance optimization)```
 
 ## Configuration Options
 ### Staff tier ... adjust as required
@@ -45,8 +45,8 @@ Numba (for performance optimization)```</code></pre>
 }```
 
 ### Shift coverage based on CEH/16 estimates:
-<pre><code>```Day: rng.normal(8.78, 2.39) 
-Night: rng.normal(5.63, 0.81)```</code></pre>
+```Day: rng.normal(8.78, 2.39) 
+Night: rng.normal(5.63, 0.81)```
 
 ### Configurable run parameters
 run(seed=2025, incident_count=50, n_runs=1000, n_swaps=20_000)
@@ -55,9 +55,9 @@ run(seed=2025, incident_count=50, n_runs=1000, n_swaps=20_000)
 MIT License - See LICENSE file for details
 
 ## Citation
-<pre><code>```If using this code in academic or legal work, please cite:
+```If using this code in academic or legal work, please cite:
 Roster-Incident-Risk-Modelling: Monte Carlo Simulation of Healthcare Incident Exposure Patterns
-GitHub Repository: https://github.com/Elevation9184/Roster-Incident-Risk-Modelling```</code></pre>
+GitHub Repository: https://github.com/Elevation9184/Roster-Incident-Risk-Modelling```
 
 ## Disclaimer
 This tool is intended for educational and analytical purposes. Results should be interpreted by qualified statisticians and domain experts. The model makes simplifying assumptions about healthcare operations and should be validated against specific institutional data before use in high-stakes decisions.
