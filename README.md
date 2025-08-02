@@ -36,13 +36,13 @@ Numba (for performance optimization)```</code></pre>
 
 ## Configuration Options
 ### Staff tier ... adjust as required
-<pre><code>```TIER_SPECS = {
+```TIER_SPECS = {
     'A': {'hrs_m': 36, 'hrs_sd': 3, 'count': 15},   # 3     shifts per week
     'B': {'hrs_m': 24, 'hrs_sd': 4, 'count': 10},   # 2     shifts per week
     'C': {'hrs_m': 18, 'hrs_sd': 3, 'count':  9},   # 1     shift  per week
     'D': {'hrs_m':  9, 'hrs_sd': 2, 'count':  3},   # 0.75  shifts per week
     'E': {'hrs_m': 48, 'hrs_sd': 2, 'count':  1},   # 4     shifts per week - potential exceptional performer
-}```</code></pre>
+}```
 
 ### Shift coverage based on CEH/16 estimates:
 <pre><code>```Day: rng.normal(8.78, 2.39) 
