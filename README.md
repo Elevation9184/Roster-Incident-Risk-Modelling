@@ -1,21 +1,21 @@
 # Roster-Incident-Risk-Modelling
 A simulation-based framework for illustrating co-occurrence patterns in shift-weighted healthcare rosters.
 
-A configurable Monte Carlo simulation tool for analyzing incident exposure patterns in healthcare workforce scheduling, employing realistic nurse scheduling patterns and simulating how incidents distribute among staff members over time.
+Uses a configurable Monte Carlo simulation tool for analyzing incident exposure patterns in healthcare workforce scheduling, employing realistic nurse scheduling patterns and simulating how incidents distribute among staff members over time.
 
 ## Overview
 This tool addresses a perceived gap in healthcare risk assessment and legal analysis: understanding whether observed incident patterns reflect systematic scheduling factors or indicate individual performance issues. By simulating realistic staffing patterns, the model establishes baseline expectations for incident exposure distribution.
 
 ## Key Features
-Realistic Workforce Modeling: Simulates five-tier nursing workforce with varying hour commitments (9-36 hours/week, with an option for a high-impact tier)
-Sophisticated Scheduling: Uses swap-based binary matrix sampling to generate feasible roster assignments
-Statistical Analysis: Monte Carlo simulation with configurable parameters for robust statistical inference
-Visualization: Generates histograms showing distribution of maximum incident exposure per nurse
+Realistic Workforce Modeling: Simulates five-tier nursing workforce with varying hour commitments (9-36 hours/week, with an option for a high-impact tier)<br>
+Sophisticated Scheduling: Uses swap-based binary matrix sampling to generate feasible roster assignments<br>
+Statistical Analysis: Monte Carlo simulation with configurable parameters for robust statistical inference<br>
+Visualization: Generates histograms showing distribution of maximum incident exposure per nurse<br>
 
 ## Use Cases
-Healthcare Administration
-Legal Proceedings
-Academic Research
+Healthcare Administration<br>
+Legal Proceedings<br>
+Academic Research<br>
 
 ## The "Bad Penny" Fallacy
 Traditional analysis might calculate incident co-occurrence probability as 0.5^n, yielding astronomically small probabilities (e.g., 0.5^25 ≈ 3×10^-8). However, this approach does not take sufficient cognisance of the structural impact of  incidents in the context of roster schedules. This model demonstrates that patterns appearing "impossibly coincidental" under naive probability assumptions can occur with reasonable frequency when systematic factors are taken into account.
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ```
 
 ## Model Configuration Options
-### Staff tier ... adjust as required
+### Staff tier ... adjust within code as required
 ```
 TIER_SPECS = {
     'A': {'hrs_m': 36, 'hrs_sd': 3, 'count': 15},   # 3     shifts per week
